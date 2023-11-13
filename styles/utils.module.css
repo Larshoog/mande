@@ -50,3 +50,113 @@
 .lightText {
     color: #666;
 }
+
+.navbar {
+    height: 7rem;
+    color: #EA9E8D;
+    width: 100%;
+
+    top: 0;
+    z-index: 10;
+    position: absolute;
+    padding: 14.5px 9px;
+    text-align: center;
+}
+
+.navitem {
+    margin: 1em;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+
+.logocontainerold {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+}
+
+.logocontainer {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0 -1rem;
+}
+
+.mobilemenu {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.heading2Xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+}
+
+.headingXl {
+    font-size: 4rem;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+    color: black;
+    text-transform: uppercase;
+}
+
+.headingLg {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 1rem 0;
+    z-index: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.headingMd {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin: 4rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    background-color: #EA9E8D;
+}
+
+.fabcontainer {
+    padding: 0px 17px;
+}
+
+.content {
+    min-height: 50vh;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    padding: 0 1rem;
+    background-color: #EA9E8D;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.section > * {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .section {
+        gap: 0rem;
+        flex-direction: column;
+    }
+    .section:nth-child(even) {
+        flex-direction: column;
+    }
+}
+.gridwrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 0 5vw;
+    gap: 4rem 0;
+}

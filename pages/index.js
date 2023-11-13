@@ -1,44 +1,21 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/Layout';
 import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
-// test
-export async function getStaticProps() {
-    const allPostsData = getSortedPostsData();
-    return {
-        props: {
-            allPostsData,
-        },
-    };
-}
+import Section from "../components/Section";
+import ContentTextButtonless from "../components/Contentblock";
+import ContentImage from "../components/ContentImage";
 
-export default function Home({ allPostsData }) {
-  return (
-      <Layout home>
-        <Head>
-          <title>{siteTitle}</title>
-        </Head>
-        <section className={utilStyles.headingMd}>
-          <p>Cathelijne de Man (2001) is gefascineerd door zowel beeld als taal. De ambiguïteit van beide begrippen onderzoekt zij in haar werk. Ze is een fervent kunstliefhebber en verzamelaar. In de toekomst hoopt ze ooit zelf tentoonstellingen te cureren en boeken te schrijven.</p>
-        </section>
-          <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-              <h2 className={utilStyles.headingLg}>Blog</h2>
-              <ul className={utilStyles.list}>
-                  {allPostsData.map(({ id, date, title }) => (
-                      <li className={utilStyles.listItem} key={id}>
-                          <Link href={`/posts/${id}`}>
-                              <a>{title}</a>
-                          </Link>
-                          <br />
-                          <small className={utilStyles.lightText}>
-                              <Date dateString={date} />
-                          </small>
-                      </li>
-                  ))}
-              </ul>
-          </section>
-      </Layout>
-  );
-}
+const Index = () => (
+    <Layout pagetype="home">
+        <div className={utilStyles.gridwrapper}>
+            <Section>
+                <ContentImage imageUrl={'/images/IMG_9004.jpg'} linkUrl={'bio'} title={'Over Lars'} />
+                <ContentImage imageUrl={'/images/IMG_9003.jpg'} linkUrl={'bio'} title={'Over Lars'} />
+                <ContentImage imageUrl={'/images/IMG_9003.jpg'} linkUrl={'bio'} title={'Over Lars'} />
+                <ContentImage imageUrl={'/images/IMG_9004.jpg'} linkUrl={'bio'} title={'Over Lars'} />
+                <ContentImage imageUrl={'/images/IMG_9003.jpg'} linkUrl={'bio'} title={'Over Lars'} />
+            </Section>
+        </div>
+    </Layout>
+)
+
+export default Index

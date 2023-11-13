@@ -1,6 +1,25 @@
-// `pages/_app.js`
-import '../styles/global.css';
+import { createTheme, ThemeProvider } from '@mui/material'
+import React from 'react'
+import '../styles/global.css'
 
-export default function App({ Component, pageProps }) {
-    return <Component {...pageProps} />;
-}
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#EA9E8D',
+        },
+        secondary: {
+            main: '#3ABEFF',
+        },
+        tertiary: {
+            main: '#26FFE6',
+        },
+    },
+})
+
+const App = ({ Component, pageProps }) => (
+    <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+    </ThemeProvider>
+)
+
+export default App
