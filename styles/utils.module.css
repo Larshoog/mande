@@ -51,20 +51,28 @@
     color: #666;
 }
 
-.navbar {
-    height: 7rem;
+.navbarcontainer {
     color: #EA9E8D;
     width: 100%;
-
+    right: 0;
     top: 0;
     z-index: 10;
     position: absolute;
-    padding: 14.5px 9px;
+    text-align: center;
+}
+.navbar {
+    color: #EA9E8D;
+    width: 50%;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    position: absolute;
+    padding: 35px;
     text-align: center;
 }
 
 .navitem {
-    margin: 1em;
+    margin: 3em 1em;
     text-transform: uppercase;
     color: black;
     font-weight: 600;

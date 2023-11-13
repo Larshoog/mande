@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 4rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     background-color: #EA9E8D;
 }
 

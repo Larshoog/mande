@@ -84,13 +84,15 @@ const Header = ({imageUrl, name, pagetype, imageCredits}) => {
                     </Box>
                 </Drawer>
             </div>
-            <div className={utilStyles.navbar}>
+            <div className={utilStyles.navbarcontainer}>
                 <div className={utilStyles.logocontainerold}>
                     <h1 className={utilStyles.headingLg}>Cathelijne de Man</h1>
                 </div>
+                <div className={utilStyles.navbar}>
                 {nav.map((navItem) => (
                     <NavItem text={navItem.label} href={navItem.url} key={navItem.url}/>
                 ))}
+                </div>
             </div>
         </header>
     )

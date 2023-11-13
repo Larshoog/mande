@@ -10,9 +10,9 @@ const Index = () => (
             <Section>
                 <ContentImage imageUrl={'/images/IMG_9004.jpg'} linkUrl={'bio'} title={'Over Lars'} />
                 <ContentImage imageUrl={'/images/IMG_9003.jpg'} linkUrl={'bio'} title={'Over Lars'} />
-                <ContentImage imageUrl={'/images/IMG_9003.jpg'} linkUrl={'bio'} title={'Over Lars'} />
                 <ContentImage imageUrl={'/images/IMG_9004.jpg'} linkUrl={'bio'} title={'Over Lars'} />
                 <ContentImage imageUrl={'/images/IMG_9003.jpg'} linkUrl={'bio'} title={'Over Lars'} />
+                <ContentImage imageUrl={'/images/IMG_9004.jpg'} linkUrl={'bio'} title={'Over Lars'} />
             </Section>
         </div>
     </Layout>
