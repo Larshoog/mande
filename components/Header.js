@@ -32,7 +32,7 @@ import NavItem from './NavItem'
 const nav = [
     {url: '/', label: 'Home', icon: <HomeIcon/>},
     {url: '/bio', label: 'Over', icon: <PersonIcon/>},
-    {url: '/contact', label: 'Contact', icon: <MailIcon/>},
+    {url: '/shop', label: 'Webshop', icon: <MailIcon/>},
 ]
 
 const Header = ({imageUrl, name, pagetype, imageCredits}) => {

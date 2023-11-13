@@ -6,6 +6,9 @@ const ContentImage = ({ title, linkUrl, imageUrl }) => (
     <div className={utilStyles.content}>
         <Link href={linkUrl}>
             <Image src={imageUrl} layout="fill" objectFit="contain" />
+            <div className={utilStyles.blockcontainer}>
+                <h2 className={utilStyles.heading}>{title}</h2>
+            </div>
         </Link>
     </div>
 )
